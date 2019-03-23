@@ -1,0 +1,70 @@
+// -------------------------------------
+@import "../../scss/variables";
+// -------------------------------------
+.app {
+  &-info-wrap {
+    span {
+      font-size: 0.8rem;
+      color: $light_grey;
+    }
+  }
+}
+
+.form-label-bold {
+  color: $dark_salmon;
+  font-weight: 700;
+}
+
+.app-form-inner-div {
+  position: relative;
+  float: left;
+  width: 48%;
+  .app-form-label {
+    display: block;
+  }
+}
+.app-form-inner-div:last-child {
+   float: right;
+ }
+
+#prefill-btn {
+  border-radius: 0;
+  background-color: $white;
+  color: $salmon;
+  border: 1px solid $salmon;
+}
+
+.data-navigate-views {
+  display: block;
+  font-size: 0.8rem;
+  margin-top: 15px;
+  color: $dark_salmon;
+}
+
+.app {
+  &-patient-info-data-tabular {
+    position: relative;
+    padding: 30px 0;
+  }
+  &-data-ul {
+    margin-bottom: 30px;
+  }
+  &-data-li {
+    border-bottom: 1px solid $med_grey;
+    &:first-child {
+      border-top: 1px solid $med_grey;
+    }
+  }
+  &-data-sub-li {
+    font-size: 1.3rem;
+    font-weight: 700;
+    padding-top: 20px;
+    ul {
+
+    }
+  }
+}
+
+
+// -------------------------------------
+// -------------------------------------

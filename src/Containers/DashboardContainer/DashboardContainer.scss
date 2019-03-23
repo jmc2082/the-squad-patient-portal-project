@@ -1,0 +1,203 @@
+// -------------------------------------
+@import "../../scss/variables";
+// -------------------------------------
+.app {
+  &-dashboard-item-wrap {
+    position: relative;
+    border: 1px solid $light_grey;
+    background-color: $white;
+    margin-bottom: 8px;
+    webkit-box-shadow: 0 0 4px 1px $light_grey;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    moz-box-shadow: 0 0 4px 1px $light_grey;  /* Firefox 3.5 - 3.6 */
+    box-shadow: 0 0 4px 1px $light_grey;
+  }
+
+}
+
+.dashboard {
+  position: relative;
+  &-item-controls {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 3;
+    svg {
+      color: $white;
+      font-size: 1.3rem;
+      margin: 5px;
+    }
+  }
+
+  &-item-content-wrap {
+    position: relative;
+    min-height: 150px;
+    z-index: 1;
+  }
+
+  &-item-image {
+    position: absolute;
+    left: 15px;
+    width: 60px;
+    height: 60px;
+    background: red;
+    -moz-border-radius: 30px;
+    -webkit-border-radius: 30px;
+    border-radius: 30px;
+    @extend .center_element;
+  }
+
+  &-item-content-right {
+    position: relative;
+    max-width: 180px;
+    width: 100%;
+    float: right;
+    padding: 30px 0 0 0;
+  }
+
+  &-item-bg-wrap {
+    position: absolute;
+    @extend .hog_screen;
+    z-index: 0;
+  }
+
+  &-bg-top {
+    height: 50%;
+    text-indent: -9999px;
+    background-color: $dark_salmon;
+  }
+
+  &-add-doctor-wrap {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background-color: $white;
+    margin: 5px 0 20px 0;
+    .add-doctor-btn {
+      display: block;
+      position: absolute;
+      width: 100%;
+      color: $salmon;
+      text-align: center;
+      @extend .center_element
+    }
+  }
+
+}
+
+.care-type {
+  display: block;
+  color: $white;
+  font-size: 0.8rem;
+}
+
+.doctors-name {
+  display: block;
+  color: $white;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.address-1 {
+  display: block;
+  font-size: 0.7rem;
+  margin-top: 15px;
+}
+
+.address-2 {
+  display: block;
+  font-size: 0.7rem;
+}
+
+.phone-number {
+  display: block;
+  font-size: 0.7rem;
+}
+
+// -------------------------------------
+.app {
+  &-search-doctors-modal {
+    display: none;
+    position: fixed;
+    @extend .hog_screen;
+    background-color: $white;
+    z-index: 78;
+  }
+}
+
+.search {
+  &-doctors-in-area {
+    display: block;
+    text-align: center;
+    margin: 20px 0;
+  }
+  &-doctors-wrap {
+    position: relative;
+    margin-bottom: 15px;
+    padding: 0 20px;
+    //background-color: $salmon;
+    height: 46px;
+    svg {
+      position: absolute;
+      left: 38px;
+      margin: 0;
+      z-index: 9;
+      color: $light_grey;
+      @extend .center_element;
+    }
+    input {
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      padding: 10px 25px 10px 35px;
+      z-index: 8;
+      color: $light_grey;
+      border: 1px solid $light_grey;
+      width: 85%;
+    }
+  }
+  &-doctors-input {
+
+  }
+  &-cancel-wrap {
+    clear: both;
+    button {
+      display: block;
+      color: $white;
+      border-radius: 0;
+      margin: 15px auto 0 auto;
+      width: 85%;
+      background-color: $dark_salmon;
+    }
+  }
+  &-modal-tint {
+    text-indent: -9999px;
+  }
+
+  &-doctor {
+    position: relative;
+    width: 85%;
+    margin: 0 auto 10px auto;
+    padding: 7px 0;
+    background-color: $light_salmon;
+    svg {
+      position: absolute;
+      @extend .center_element;
+      left: 15px;
+    }
+  }
+  &-care-type {
+    display: block;
+    text-align: center;
+  }
+  &-doctors-name {
+    display: block;
+    text-align: center;
+    font-weight: 700;
+  }
+}
+
+// -------------------------------------
+// -------------------------------------

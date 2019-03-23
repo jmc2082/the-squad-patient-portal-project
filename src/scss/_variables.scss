@@ -1,0 +1,140 @@
+// Variables and other stuff
+// -------------------------------------
+@import "../../node_modules/bootstrap/dist/css/bootstrap.min";
+
+// -------------------------------------
+$dark_teal: #224e5e;
+$light_salmon: #fec6aa;
+$salmon: #fd8a86;
+$dark_salmon: #fe4a56;
+$light_teal: #b8d7d7;
+$white_teal: #edf7f5;
+
+$red: #ff0000;
+$yellow: #fff000;
+$black: #000000;
+$white: #ffffff;
+$dark_grey: #262626;
+$med_grey: #5e5e5e;
+$light_grey: #cccccc;
+
+// -------------------------------------
+.hog_screen {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+.hog_screen_partial {
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+.show-element {
+  display: block !important;
+}
+
+img {
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.center_element {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.clearall {
+  clear: both;
+  text-indent: -9999px;
+}
+
+.app_background_gradient {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fcfcfc+0,fce6e5+39,fccecc+62,fd8a86+100 */
+  background: #fcfcfc; /* Old browsers */
+  background: -moz-linear-gradient(top, #fcfcfc 0%, #fce6e5 39%, #fccecc 62%, #fd8a86 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #fcfcfc 0%,#fce6e5 39%,#fccecc 62%,#fd8a86 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #fcfcfc 0%,#fce6e5 39%,#fccecc 62%,#fd8a86 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#fd8a86',GradientType=0 ); /* IE6-9 */
+}
+
+//.app_background_gradient {
+//  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fcfcfc+0,fcfcfc+25,fce6e5+54,fccecc+77,fd8a86+100 */
+//  background: #fcfcfc; /* Old browsers */
+//  background: -moz-linear-gradient(top, #fcfcfc 0%, #fcfcfc 25%, #fce6e5 54%, #fccecc 77%, #fd8a86 100%); /* FF3.6-15 */
+//  background: -webkit-linear-gradient(top, #fcfcfc 0%,#fcfcfc 25%,#fce6e5 54%,#fccecc 77%,#fd8a86 100%); /* Chrome10-25,Safari5.1-6 */
+//  background: linear-gradient(to bottom, #fcfcfc 0%,#fcfcfc 25%,#fce6e5 54%,#fccecc 77%,#fd8a86 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+//  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#fd8a86',GradientType=0 ); /* IE6-9 */
+//}
+
+// -------------------------------------
+body {
+  position: relative;
+  width: 100%;
+  //height: 100vh;
+  min-height: 800px;
+  height: 100%;
+  @extend .app_background_gradient;
+}
+
+// -------------------------------------
+.app {
+  &-container-wrapper {
+    position: relative;
+    max-width: 270px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  &-form-group {
+
+  }
+
+  &-form-div {
+    margin-bottom: 10px;
+  }
+
+  &-form-label {
+    margin-bottom: 5px;
+    font-size: 0.7rem;
+  }
+
+  &-form-input {
+    border-radius: 0;
+  }
+
+  &-form-submit {
+    border: none;
+    border-radius: 0;
+    margin-top: 10px;
+    &.bg-color-dark-salmon {
+      background-color: $dark_salmon;
+    }
+  }
+
+  &-regular-text {
+    font-size: 1rem;
+    font-weight: 900;
+    &.color-dark-salmon {
+      color: $dark_salmon;
+    }
+  }
+
+}
+
+// -------------------------------------
+// -------------------------------------
+// -------------------------------------
+// -------------------------------------
+// -------------------------------------
+// -------------------------------------

@@ -1,0 +1,42 @@
+// -------------------------------------
+@import "../../scss/variables";
+// -------------------------------------
+.app {
+  &-center-brand-component {
+    position: relative;
+    max-width: 170px;
+    width: 100%;
+    margin: 50px auto;
+    padding: 0;
+    //background-color: $red;
+  }
+
+  //&-brand-center-img {
+  //  display: block;
+  //  position: relative;
+  //  width: 70%;
+  //  margin: 0 auto 10px auto;
+  //  padding: 0;
+  //}
+
+  &-brand-bg-image-block {
+    position: relative;
+    text-indent: -9999px;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 10px auto;
+    //background-color: $salmon;
+    background: url("../../assets/images/TheSquadLogo.png") no-repeat;
+    background-size: contain;
+    background-position: top center;
+  }
+
+  &-brand-center-title {
+    display: block;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+}
+
+// -------------------------------------
+// -------------------------------------

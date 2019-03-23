@@ -1,0 +1,37 @@
+// -------------------------------------
+@import "../../scss/variables";
+// -------------------------------------
+.app {
+  &-logged-in-header {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid $med_grey;
+  }
+
+  &-header-title {
+    position: absolute;
+    font-weight: 100;
+    font-size: 1.1rem;
+    text-align: center;
+    display: block;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    @extend .center_element;
+  }
+
+  &-header-nav-toggle-wrapper {
+    position: absolute;
+    //float: right;
+    right: 0;
+    @extend .center_element;
+    svg {
+      color: $salmon;
+      font-size: 1.5rem;
+    }
+  }
+}
+
+// -------------------------------------
+// -------------------------------------
